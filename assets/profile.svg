@@ -9,7 +9,7 @@
     .code-text { font-family: 'Courier New', Courier, monospace; font-size: 12px; white-space: pre; }
     .prompt::after {
       content: "$ ";
-      animation: typeSequence 20.38s infinite;
+      animation: typeSequence 20.62s infinite;
       color: #e8384f;
       font-weight: bold;
     }
@@ -24,245 +24,249 @@
     @keyframes typeSequence {
   0.00% { content: "$ "; }
   0.39% { content: "$ a"; }
-  0.79% { content: "$ as"; }
-  1.18% { content: "$ asp"; }
-  1.57% { content: "$ aspi"; }
-  1.96% { content: "$ aspir"; }
-  2.36% { content: "$ aspiri"; }
-  2.75% { content: "$ aspirin"; }
-  3.14% { content: "$ aspiring"; }
-  3.53% { content: "$ aspiring "; }
-  3.93% { content: "$ aspiring s"; }
-  4.32% { content: "$ aspiring so"; }
-  4.71% { content: "$ aspiring sof"; }
-  5.10% { content: "$ aspiring soft"; }
-  5.50% { content: "$ aspiring softw"; }
-  5.89% { content: "$ aspiring softwa"; }
-  6.28% { content: "$ aspiring softwar"; }
-  6.67% { content: "$ aspiring software"; }
-  7.07% { content: "$ aspiring software "; }
-  7.46% { content: "$ aspiring software d"; }
-  7.85% { content: "$ aspiring software de"; }
-  8.25% { content: "$ aspiring software dev"; }
-  8.64% { content: "$ aspiring software deve"; }
-  9.03% { content: "$ aspiring software devel"; }
-  9.42% { content: "$ aspiring software develo"; }
-  9.82% { content: "$ aspiring software develop"; }
-  10.21% { content: "$ aspiring software develope"; }
-  10.60% { content: "$ aspiring software developer"; }
-  16.00% { content: "$ aspiring software developer"; }
-  16.22% { content: "$ aspiring software develope"; }
-  16.44% { content: "$ aspiring software develop"; }
-  16.66% { content: "$ aspiring software develo"; }
-  16.88% { content: "$ aspiring software devel"; }
-  17.10% { content: "$ aspiring software deve"; }
-  17.33% { content: "$ aspiring software dev"; }
-  17.55% { content: "$ aspiring software de"; }
-  17.77% { content: "$ aspiring software d"; }
-  17.99% { content: "$ aspiring software "; }
-  18.21% { content: "$ aspiring software"; }
-  18.43% { content: "$ aspiring softwar"; }
-  18.65% { content: "$ aspiring softwa"; }
-  18.87% { content: "$ aspiring softw"; }
-  19.09% { content: "$ aspiring soft"; }
-  19.31% { content: "$ aspiring sof"; }
-  19.53% { content: "$ aspiring so"; }
-  19.75% { content: "$ aspiring s"; }
-  19.98% { content: "$ aspiring "; }
-  20.20% { content: "$ aspiring"; }
-  20.42% { content: "$ aspirin"; }
-  20.64% { content: "$ aspiri"; }
-  20.86% { content: "$ aspir"; }
-  21.08% { content: "$ aspi"; }
-  21.30% { content: "$ asp"; }
-  21.52% { content: "$ as"; }
-  21.74% { content: "$ a"; }
-  21.96% { content: "$ "; }
-  23.93% { content: "$ "; }
-  23.93% { content: "$ "; }
-  24.32% { content: "$ b"; }
-  24.71% { content: "$ bs"; }
-  25.10% { content: "$ bs "; }
-  25.50% { content: "$ bs c"; }
-  25.89% { content: "$ bs co"; }
-  26.28% { content: "$ bs com"; }
-  26.67% { content: "$ bs comp"; }
-  27.07% { content: "$ bs compu"; }
-  27.46% { content: "$ bs comput"; }
-  27.85% { content: "$ bs compute"; }
-  28.25% { content: "$ bs computer"; }
-  28.64% { content: "$ bs computer "; }
-  29.03% { content: "$ bs computer e"; }
-  29.42% { content: "$ bs computer en"; }
-  29.82% { content: "$ bs computer eng"; }
-  30.21% { content: "$ bs computer engi"; }
-  30.60% { content: "$ bs computer engin"; }
-  30.99% { content: "$ bs computer engine"; }
-  31.39% { content: "$ bs computer enginee"; }
-  31.78% { content: "$ bs computer engineer"; }
-  32.17% { content: "$ bs computer engineeri"; }
-  32.56% { content: "$ bs computer engineerin"; }
-  32.96% { content: "$ bs computer engineering"; }
-  33.35% { content: "$ bs computer engineering "; }
-  33.74% { content: "$ bs computer engineering s"; }
-  34.13% { content: "$ bs computer engineering st"; }
-  34.53% { content: "$ bs computer engineering stu"; }
-  34.92% { content: "$ bs computer engineering stud"; }
-  35.31% { content: "$ bs computer engineering stude"; }
-  35.71% { content: "$ bs computer engineering studen"; }
-  36.10% { content: "$ bs computer engineering student"; }
-  41.50% { content: "$ bs computer engineering student"; }
-  41.72% { content: "$ bs computer engineering studen"; }
-  41.94% { content: "$ bs computer engineering stude"; }
-  42.16% { content: "$ bs computer engineering stud"; }
-  42.38% { content: "$ bs computer engineering stu"; }
-  42.60% { content: "$ bs computer engineering st"; }
-  42.82% { content: "$ bs computer engineering s"; }
-  43.04% { content: "$ bs computer engineering "; }
-  43.26% { content: "$ bs computer engineering"; }
-  43.48% { content: "$ bs computer engineerin"; }
-  43.71% { content: "$ bs computer engineeri"; }
-  43.93% { content: "$ bs computer engineer"; }
-  44.15% { content: "$ bs computer enginee"; }
-  44.37% { content: "$ bs computer engine"; }
-  44.59% { content: "$ bs computer engin"; }
-  44.81% { content: "$ bs computer engi"; }
-  45.03% { content: "$ bs computer eng"; }
-  45.25% { content: "$ bs computer en"; }
-  45.47% { content: "$ bs computer e"; }
-  45.69% { content: "$ bs computer "; }
-  45.91% { content: "$ bs computer"; }
-  46.13% { content: "$ bs compute"; }
-  46.36% { content: "$ bs comput"; }
-  46.58% { content: "$ bs compu"; }
-  46.80% { content: "$ bs comp"; }
-  47.02% { content: "$ bs com"; }
-  47.24% { content: "$ bs co"; }
-  47.46% { content: "$ bs c"; }
-  47.68% { content: "$ bs "; }
-  47.90% { content: "$ bs"; }
-  48.12% { content: "$ b"; }
-  48.34% { content: "$ "; }
-  50.31% { content: "$ "; }
-  50.31% { content: "$ "; }
-  50.70% { content: "$ w"; }
-  51.09% { content: "$ we"; }
-  51.48% { content: "$ web"; }
-  51.88% { content: "$ web "; }
-  52.27% { content: "$ web &amp;"; }
-  52.66% { content: "$ web &amp; "; }
-  53.06% { content: "$ web &amp; m"; }
-  53.45% { content: "$ web &amp; mo"; }
-  53.84% { content: "$ web &amp; mob"; }
-  54.23% { content: "$ web &amp; mobi"; }
-  54.63% { content: "$ web &amp; mobil"; }
-  55.02% { content: "$ web &amp; mobile"; }
-  55.41% { content: "$ web &amp; mobile "; }
-  55.80% { content: "$ web &amp; mobile d"; }
-  56.20% { content: "$ web &amp; mobile de"; }
-  56.59% { content: "$ web &amp; mobile dev"; }
-  56.98% { content: "$ web &amp; mobile deve"; }
-  57.37% { content: "$ web &amp; mobile devel"; }
-  57.77% { content: "$ web &amp; mobile develo"; }
-  58.16% { content: "$ web &amp; mobile develop"; }
-  58.55% { content: "$ web &amp; mobile developm"; }
-  58.94% { content: "$ web &amp; mobile developme"; }
-  59.34% { content: "$ web &amp; mobile developmen"; }
-  59.73% { content: "$ web &amp; mobile development"; }
-  65.13% { content: "$ web &amp; mobile development"; }
-  65.35% { content: "$ web &amp; mobile developmen"; }
-  65.57% { content: "$ web &amp; mobile developme"; }
-  65.79% { content: "$ web &amp; mobile developm"; }
-  66.01% { content: "$ web &amp; mobile develop"; }
-  66.23% { content: "$ web &amp; mobile develo"; }
-  66.45% { content: "$ web &amp; mobile devel"; }
-  66.67% { content: "$ web &amp; mobile deve"; }
-  66.90% { content: "$ web &amp; mobile dev"; }
-  67.12% { content: "$ web &amp; mobile de"; }
-  67.34% { content: "$ web &amp; mobile d"; }
-  67.56% { content: "$ web &amp; mobile "; }
-  67.78% { content: "$ web &amp; mobile"; }
-  68.00% { content: "$ web &amp; mobil"; }
-  68.22% { content: "$ web &amp; mobi"; }
-  68.44% { content: "$ web &amp; mob"; }
-  68.66% { content: "$ web &amp; mo"; }
-  68.88% { content: "$ web &amp; m"; }
-  69.10% { content: "$ web &amp; "; }
-  69.33% { content: "$ web &amp;"; }
-  69.55% { content: "$ web "; }
-  69.77% { content: "$ web"; }
-  69.99% { content: "$ we"; }
-  70.21% { content: "$ w"; }
-  70.43% { content: "$ "; }
-  72.39% { content: "$ "; }
-  72.39% { content: "$ "; }
-  72.79% { content: "$ a"; }
-  73.18% { content: "$ ac"; }
-  73.57% { content: "$ act"; }
-  73.96% { content: "$ acti"; }
-  74.36% { content: "$ activ"; }
-  74.75% { content: "$ active"; }
-  75.14% { content: "$ activel"; }
-  75.53% { content: "$ actively"; }
-  75.93% { content: "$ actively "; }
-  76.32% { content: "$ actively s"; }
-  76.71% { content: "$ actively se"; }
-  77.10% { content: "$ actively see"; }
-  77.50% { content: "$ actively seek"; }
-  77.89% { content: "$ actively seeki"; }
-  78.28% { content: "$ actively seekin"; }
-  78.67% { content: "$ actively seeking"; }
-  79.07% { content: "$ actively seeking "; }
-  79.46% { content: "$ actively seeking o"; }
-  79.85% { content: "$ actively seeking oj"; }
-  80.25% { content: "$ actively seeking ojt"; }
-  80.64% { content: "$ actively seeking ojt "; }
-  81.03% { content: "$ actively seeking ojt /"; }
-  81.42% { content: "$ actively seeking ojt / "; }
-  81.82% { content: "$ actively seeking ojt / i"; }
-  82.21% { content: "$ actively seeking ojt / in"; }
-  82.60% { content: "$ actively seeking ojt / int"; }
-  82.99% { content: "$ actively seeking ojt / inte"; }
-  83.39% { content: "$ actively seeking ojt / inter"; }
-  83.78% { content: "$ actively seeking ojt / intern"; }
-  84.17% { content: "$ actively seeking ojt / interns"; }
-  84.56% { content: "$ actively seeking ojt / internsh"; }
-  84.96% { content: "$ actively seeking ojt / internshi"; }
-  85.35% { content: "$ actively seeking ojt / internship"; }
-  90.75% { content: "$ actively seeking ojt / internship"; }
-  90.97% { content: "$ actively seeking ojt / internshi"; }
-  91.19% { content: "$ actively seeking ojt / internsh"; }
-  91.41% { content: "$ actively seeking ojt / interns"; }
-  91.63% { content: "$ actively seeking ojt / intern"; }
-  91.85% { content: "$ actively seeking ojt / inter"; }
-  92.07% { content: "$ actively seeking ojt / inte"; }
-  92.29% { content: "$ actively seeking ojt / int"; }
-  92.52% { content: "$ actively seeking ojt / in"; }
-  92.74% { content: "$ actively seeking ojt / i"; }
-  92.96% { content: "$ actively seeking ojt / "; }
-  93.18% { content: "$ actively seeking ojt /"; }
-  93.40% { content: "$ actively seeking ojt "; }
-  93.62% { content: "$ actively seeking ojt"; }
-  93.84% { content: "$ actively seeking oj"; }
-  94.06% { content: "$ actively seeking o"; }
-  94.28% { content: "$ actively seeking "; }
-  94.50% { content: "$ actively seeking"; }
-  94.72% { content: "$ actively seekin"; }
-  94.94% { content: "$ actively seeki"; }
-  95.17% { content: "$ actively seek"; }
-  95.39% { content: "$ actively see"; }
-  95.61% { content: "$ actively se"; }
-  95.83% { content: "$ actively s"; }
-  96.05% { content: "$ actively "; }
-  96.27% { content: "$ actively"; }
-  96.49% { content: "$ activel"; }
-  96.71% { content: "$ active"; }
-  96.93% { content: "$ activ"; }
-  97.15% { content: "$ acti"; }
-  97.37% { content: "$ act"; }
-  97.60% { content: "$ ac"; }
-  97.82% { content: "$ a"; }
-  98.04% { content: "$ "; }
+  0.78% { content: "$ as"; }
+  1.16% { content: "$ asp"; }
+  1.55% { content: "$ aspi"; }
+  1.94% { content: "$ aspir"; }
+  2.33% { content: "$ aspiri"; }
+  2.72% { content: "$ aspirin"; }
+  3.10% { content: "$ aspiring"; }
+  3.49% { content: "$ aspiring "; }
+  3.88% { content: "$ aspiring s"; }
+  4.27% { content: "$ aspiring so"; }
+  4.65% { content: "$ aspiring sof"; }
+  5.04% { content: "$ aspiring soft"; }
+  5.43% { content: "$ aspiring softw"; }
+  5.82% { content: "$ aspiring softwa"; }
+  6.21% { content: "$ aspiring softwar"; }
+  6.59% { content: "$ aspiring software"; }
+  6.98% { content: "$ aspiring software "; }
+  7.37% { content: "$ aspiring software d"; }
+  7.76% { content: "$ aspiring software de"; }
+  8.15% { content: "$ aspiring software dev"; }
+  8.53% { content: "$ aspiring software deve"; }
+  8.92% { content: "$ aspiring software devel"; }
+  9.31% { content: "$ aspiring software develo"; }
+  9.70% { content: "$ aspiring software develop"; }
+  10.08% { content: "$ aspiring software develope"; }
+  10.47% { content: "$ aspiring software developer"; }
+  15.81% { content: "$ aspiring software developer"; }
+  16.02% { content: "$ aspiring software develope"; }
+  16.24% { content: "$ aspiring software develop"; }
+  16.46% { content: "$ aspiring software develo"; }
+  16.68% { content: "$ aspiring software devel"; }
+  16.90% { content: "$ aspiring software deve"; }
+  17.12% { content: "$ aspiring software dev"; }
+  17.33% { content: "$ aspiring software de"; }
+  17.55% { content: "$ aspiring software d"; }
+  17.77% { content: "$ aspiring software "; }
+  17.99% { content: "$ aspiring software"; }
+  18.21% { content: "$ aspiring softwar"; }
+  18.42% { content: "$ aspiring softwa"; }
+  18.64% { content: "$ aspiring softw"; }
+  18.86% { content: "$ aspiring soft"; }
+  19.08% { content: "$ aspiring sof"; }
+  19.30% { content: "$ aspiring so"; }
+  19.52% { content: "$ aspiring s"; }
+  19.73% { content: "$ aspiring "; }
+  19.95% { content: "$ aspiring"; }
+  20.17% { content: "$ aspirin"; }
+  20.39% { content: "$ aspiri"; }
+  20.61% { content: "$ aspir"; }
+  20.82% { content: "$ aspi"; }
+  21.04% { content: "$ asp"; }
+  21.26% { content: "$ as"; }
+  21.48% { content: "$ a"; }
+  21.70% { content: "$ "; }
+  23.64% { content: "$ "; }
+  23.64% { content: "$ "; }
+  24.02% { content: "$ b"; }
+  24.41% { content: "$ bs"; }
+  24.80% { content: "$ bs "; }
+  25.19% { content: "$ bs c"; }
+  25.58% { content: "$ bs co"; }
+  25.96% { content: "$ bs com"; }
+  26.35% { content: "$ bs comp"; }
+  26.74% { content: "$ bs compu"; }
+  27.13% { content: "$ bs comput"; }
+  27.52% { content: "$ bs compute"; }
+  27.90% { content: "$ bs computer"; }
+  28.29% { content: "$ bs computer "; }
+  28.68% { content: "$ bs computer e"; }
+  29.07% { content: "$ bs computer en"; }
+  29.45% { content: "$ bs computer eng"; }
+  29.84% { content: "$ bs computer engi"; }
+  30.23% { content: "$ bs computer engin"; }
+  30.62% { content: "$ bs computer engine"; }
+  31.01% { content: "$ bs computer enginee"; }
+  31.39% { content: "$ bs computer engineer"; }
+  31.78% { content: "$ bs computer engineeri"; }
+  32.17% { content: "$ bs computer engineerin"; }
+  32.56% { content: "$ bs computer engineering"; }
+  32.95% { content: "$ bs computer engineering "; }
+  33.33% { content: "$ bs computer engineering s"; }
+  33.72% { content: "$ bs computer engineering st"; }
+  34.11% { content: "$ bs computer engineering stu"; }
+  34.50% { content: "$ bs computer engineering stud"; }
+  34.88% { content: "$ bs computer engineering stude"; }
+  35.27% { content: "$ bs computer engineering studen"; }
+  35.66% { content: "$ bs computer engineering student"; }
+  40.99% { content: "$ bs computer engineering student"; }
+  41.21% { content: "$ bs computer engineering studen"; }
+  41.43% { content: "$ bs computer engineering stude"; }
+  41.65% { content: "$ bs computer engineering stud"; }
+  41.87% { content: "$ bs computer engineering stu"; }
+  42.08% { content: "$ bs computer engineering st"; }
+  42.30% { content: "$ bs computer engineering s"; }
+  42.52% { content: "$ bs computer engineering "; }
+  42.74% { content: "$ bs computer engineering"; }
+  42.96% { content: "$ bs computer engineerin"; }
+  43.18% { content: "$ bs computer engineeri"; }
+  43.39% { content: "$ bs computer engineer"; }
+  43.61% { content: "$ bs computer enginee"; }
+  43.83% { content: "$ bs computer engine"; }
+  44.05% { content: "$ bs computer engin"; }
+  44.27% { content: "$ bs computer engi"; }
+  44.48% { content: "$ bs computer eng"; }
+  44.70% { content: "$ bs computer en"; }
+  44.92% { content: "$ bs computer e"; }
+  45.14% { content: "$ bs computer "; }
+  45.36% { content: "$ bs computer"; }
+  45.58% { content: "$ bs compute"; }
+  45.79% { content: "$ bs comput"; }
+  46.01% { content: "$ bs compu"; }
+  46.23% { content: "$ bs comp"; }
+  46.45% { content: "$ bs com"; }
+  46.67% { content: "$ bs co"; }
+  46.88% { content: "$ bs c"; }
+  47.10% { content: "$ bs "; }
+  47.32% { content: "$ bs"; }
+  47.54% { content: "$ b"; }
+  47.76% { content: "$ "; }
+  49.70% { content: "$ "; }
+  49.70% { content: "$ "; }
+  50.08% { content: "$ w"; }
+  50.47% { content: "$ we"; }
+  50.86% { content: "$ web"; }
+  51.25% { content: "$ web "; }
+  51.64% { content: "$ web a"; }
+  52.02% { content: "$ web an"; }
+  52.41% { content: "$ web and"; }
+  52.80% { content: "$ web and "; }
+  53.19% { content: "$ web and m"; }
+  53.58% { content: "$ web and mo"; }
+  53.96% { content: "$ web and mob"; }
+  54.35% { content: "$ web and mobi"; }
+  54.74% { content: "$ web and mobil"; }
+  55.13% { content: "$ web and mobile"; }
+  55.52% { content: "$ web and mobile "; }
+  55.90% { content: "$ web and mobile d"; }
+  56.29% { content: "$ web and mobile de"; }
+  56.68% { content: "$ web and mobile dev"; }
+  57.07% { content: "$ web and mobile deve"; }
+  57.45% { content: "$ web and mobile devel"; }
+  57.84% { content: "$ web and mobile develo"; }
+  58.23% { content: "$ web and mobile develop"; }
+  58.62% { content: "$ web and mobile developm"; }
+  59.01% { content: "$ web and mobile developme"; }
+  59.39% { content: "$ web and mobile developmen"; }
+  59.78% { content: "$ web and mobile development"; }
+  65.12% { content: "$ web and mobile development"; }
+  65.33% { content: "$ web and mobile developmen"; }
+  65.55% { content: "$ web and mobile developme"; }
+  65.77% { content: "$ web and mobile developm"; }
+  65.99% { content: "$ web and mobile develop"; }
+  66.21% { content: "$ web and mobile develo"; }
+  66.42% { content: "$ web and mobile devel"; }
+  66.64% { content: "$ web and mobile deve"; }
+  66.86% { content: "$ web and mobile dev"; }
+  67.08% { content: "$ web and mobile de"; }
+  67.30% { content: "$ web and mobile d"; }
+  67.52% { content: "$ web and mobile "; }
+  67.73% { content: "$ web and mobile"; }
+  67.95% { content: "$ web and mobil"; }
+  68.17% { content: "$ web and mobi"; }
+  68.39% { content: "$ web and mob"; }
+  68.61% { content: "$ web and mo"; }
+  68.82% { content: "$ web and m"; }
+  69.04% { content: "$ web and "; }
+  69.26% { content: "$ web and"; }
+  69.48% { content: "$ web an"; }
+  69.70% { content: "$ web a"; }
+  69.92% { content: "$ web "; }
+  70.13% { content: "$ web"; }
+  70.35% { content: "$ we"; }
+  70.57% { content: "$ w"; }
+  70.79% { content: "$ "; }
+  72.73% { content: "$ "; }
+  72.73% { content: "$ "; }
+  73.12% { content: "$ a"; }
+  73.50% { content: "$ ac"; }
+  73.89% { content: "$ act"; }
+  74.28% { content: "$ acti"; }
+  74.67% { content: "$ activ"; }
+  75.05% { content: "$ active"; }
+  75.44% { content: "$ activel"; }
+  75.83% { content: "$ actively"; }
+  76.22% { content: "$ actively "; }
+  76.61% { content: "$ actively s"; }
+  76.99% { content: "$ actively se"; }
+  77.38% { content: "$ actively see"; }
+  77.77% { content: "$ actively seek"; }
+  78.16% { content: "$ actively seeki"; }
+  78.55% { content: "$ actively seekin"; }
+  78.93% { content: "$ actively seeking"; }
+  79.32% { content: "$ actively seeking "; }
+  79.71% { content: "$ actively seeking o"; }
+  80.10% { content: "$ actively seeking oj"; }
+  80.48% { content: "$ actively seeking ojt"; }
+  80.87% { content: "$ actively seeking ojt "; }
+  81.26% { content: "$ actively seeking ojt /"; }
+  81.65% { content: "$ actively seeking ojt / "; }
+  82.04% { content: "$ actively seeking ojt / i"; }
+  82.42% { content: "$ actively seeking ojt / in"; }
+  82.81% { content: "$ actively seeking ojt / int"; }
+  83.20% { content: "$ actively seeking ojt / inte"; }
+  83.59% { content: "$ actively seeking ojt / inter"; }
+  83.98% { content: "$ actively seeking ojt / intern"; }
+  84.36% { content: "$ actively seeking ojt / interns"; }
+  84.75% { content: "$ actively seeking ojt / internsh"; }
+  85.14% { content: "$ actively seeking ojt / internshi"; }
+  85.53% { content: "$ actively seeking ojt / internship"; }
+  90.86% { content: "$ actively seeking ojt / internship"; }
+  91.08% { content: "$ actively seeking ojt / internshi"; }
+  91.30% { content: "$ actively seeking ojt / internsh"; }
+  91.52% { content: "$ actively seeking ojt / interns"; }
+  91.73% { content: "$ actively seeking ojt / intern"; }
+  91.95% { content: "$ actively seeking ojt / inter"; }
+  92.17% { content: "$ actively seeking ojt / inte"; }
+  92.39% { content: "$ actively seeking ojt / int"; }
+  92.61% { content: "$ actively seeking ojt / in"; }
+  92.82% { content: "$ actively seeking ojt / i"; }
+  93.04% { content: "$ actively seeking ojt / "; }
+  93.26% { content: "$ actively seeking ojt /"; }
+  93.48% { content: "$ actively seeking ojt "; }
+  93.70% { content: "$ actively seeking ojt"; }
+  93.92% { content: "$ actively seeking oj"; }
+  94.13% { content: "$ actively seeking o"; }
+  94.35% { content: "$ actively seeking "; }
+  94.57% { content: "$ actively seeking"; }
+  94.79% { content: "$ actively seekin"; }
+  95.01% { content: "$ actively seeki"; }
+  95.22% { content: "$ actively seek"; }
+  95.44% { content: "$ actively see"; }
+  95.66% { content: "$ actively se"; }
+  95.88% { content: "$ actively s"; }
+  96.10% { content: "$ actively "; }
+  96.32% { content: "$ actively"; }
+  96.53% { content: "$ activel"; }
+  96.75% { content: "$ active"; }
+  96.97% { content: "$ activ"; }
+  97.19% { content: "$ acti"; }
+  97.41% { content: "$ act"; }
+  97.62% { content: "$ ac"; }
+  97.84% { content: "$ a"; }
+  98.06% { content: "$ "; }
   100.00% { content: "$ "; }
 }
 
@@ -280,22 +284,22 @@
 
   <!-- ASCII Art Column -->
   <text class="code-text" fill="#5dc9f2">
-<tspan x="20" y="62">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;,&#160;&#160;&#160;&#160;&#160;.-&#x27;&quot;&#x27;-.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
-<tspan x="20" y="77">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/|&#160;&#160;&#160;.&#x27;&#160;&#160;,-.&#160;&#160;\&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="62">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;,&#160;&#160;&#160;&#160;&#160;.-'"'-.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="77">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/|&#160;&#160;&#160;.'&#160;&#160;,-.&#160;&#160;\&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
 <tspan x="20" y="92">&#160;&#160;&#160;&#160;&#160;&#160;&#160;/&#160;|&#160;&#160;/&#160;&#160;&#160;/&#160;&#160;&#160;|&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
 <tspan x="20" y="107">&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;|&#160;|&#160;&#160;&#160;|&#160;&#160;&#160;&#160;|&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
 <tspan x="20" y="122">&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;|&#160;|&#160;&#160;&#160;|&#160;&#160;&#160;&#160;|&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
 <tspan x="20" y="137">&#160;&#160;&#160;&#160;&#160;/&#160;&#160;&#160;|&#160;|&#160;&#160;&#160;|&#160;&#160;&#160;&#160;|&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
-<tspan x="20" y="152">&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;|&#160;|&#160;&#160;&#160;&#160;&#x27;--&#x27;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
-<tspan x="20" y="167">&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#x27;-&#x27;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="152">&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;|&#160;|&#160;&#160;&#160;&#160;'--'&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="167">&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;'-'&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
 <tspan x="20" y="182">&#160;&#160;&#160;&#160;&#160;\&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
-<tspan x="20" y="197">&#160;&#160;&#160;&#160;&#160;&#160;&#x27;.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;.&#x27;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
-<tspan x="20" y="212">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#x27;--.____.-&#x27;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="197">&#160;&#160;&#160;&#160;&#160;&#160;'.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;.'&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="212">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'--.____.-'&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
 <tspan x="20" y="227">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/&#160;&#160;&#160;&#160;&#160;&#160;\&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
 <tspan x="20" y="242">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;o&#160;&#160;o&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
 <tspan x="20" y="257">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;&#160;\/&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
 <tspan x="20" y="272">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\&#160;&#160;--&#160;&#160;/&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
-<tspan x="20" y="287">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#x27;.__.&#x27;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="287">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'.__.'&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
 <tspan x="20" y="302">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/&#160;&#160;|&#160;&#160;&#160;\&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
 <tspan x="20" y="317">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/&#160;&#160;&#160;|&#160;&#160;&#160;&#160;\&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
   </text>
