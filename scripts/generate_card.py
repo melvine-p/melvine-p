@@ -1,10 +1,6 @@
 import os
 import requests
 
-# ==============================================================================
-# USER CONFIGURATION & PROFILE DATA
-# ==============================================================================
-
 LOGIN = os.getenv("GITHUB_LOGIN", "melvine-p")
 
 PROFILE_FIELDS = [
@@ -49,12 +45,7 @@ PROMPT_HOLD_TIME = 1.1
 PROMPT_GAP_TIME = 0.4
 
 
-# ==============================================================================
-# HELPER FUNCTIONS
-# ==============================================================================
-
 def get_avatar_ascii(avatar_path, cols=34):
-    """Safely loads avatar image or falls back to procedural art."""
     if os.path.exists(avatar_path):
         try:
             from PIL import Image
@@ -82,9 +73,8 @@ def get_avatar_ascii(avatar_path, cols=34):
                 lines.append(line)
             return lines
         except Exception as e:
-            print(f"Error processing avatar image: {e}")
+            print(f"Note: Avatar image processing skipped ({e}). Using default ASCII art.")
 
-    # Fallback Dragon Art
     dragon_art = [
         "         ,     .-'\"'-.",
         "        /|   .'  ,-.  \\",
@@ -161,14 +151,12 @@ def generate_svg(avatar_lines, stats, login):
     svg_w = 750
     svg_h = header_h + pad_y * 2 + (total_lines * line_h) + 40
 
-    # Build ASCII XML text
     ascii_svg_text = ""
     for idx, line in enumerate(avatar_lines):
         escaped_line = line.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace(" ", "&#160;")
         y_pos = header_h + pad_y + (idx * line_h) + 12
         ascii_svg_text += f'<tspan x="{pad_x}" y="{y_pos}">{escaped_line}</tspan>\n'
 
-    # Build info text XML
     info_x = pad_x + art_width_px + 30
     info_svg_text = ""
     for idx, row in enumerate(right_rows):
