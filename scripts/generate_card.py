@@ -1,5 +1,6 @@
 import os
 import math
+import html
 import requests
 import numpy as np
 from PIL import Image
@@ -179,7 +180,7 @@ def generate_svg(avatar_lines, stats, login):
     # Build ASCII XML escape
     ascii_svg_text = ""
     for idx, line in enumerate(avatar_lines):
-        escaped_line = line.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace(" ", "&#160;")
+        escaped_line = html.escape(line).replace(" ", "&#160;")
         y_pos = header_h + pad_y + (idx * line_h) + 12
         ascii_svg_text += f'<tspan x="{pad_x}" y="{y_pos}">{escaped_line}</tspan>\n'
 
@@ -190,9 +191,12 @@ def generate_svg(avatar_lines, stats, login):
         y_pos = header_h + pad_y + (idx * line_h) + 12
         if isinstance(row, tuple):
             label, val = row
-            info_svg_text += f'<tspan x="{info_x}" y="{y_pos}"><tspan fill="{LABEL_COLOR}" font-weight="bold">{label}:</tspan> <tspan fill="{VALUE_COLOR}">{val}</tspan></tspan>\n'
+            escaped_label = html.escape(str(label))
+            escaped_val = html.escape(str(val))
+            info_svg_text += f'<tspan x="{info_x}" y="{y_pos}"><tspan fill="{LABEL_COLOR}" font-weight="bold">{escaped_label}:</tspan> <tspan fill="{VALUE_COLOR}">{escaped_val}</tspan></tspan>\n'
         else:
-            info_svg_text += f'<tspan x="{info_x}" y="{y_pos}" fill="{HEADER_COLOR}" font-weight="bold">{row}</tspan>\n'
+            escaped_row = html.escape(str(row))
+            info_svg_text += f'<tspan x="{info_x}" y="{y_pos}" fill="{HEADER_COLOR}" font-weight="bold">{escaped_row}</tspan>\n'
 
     # Color palette swatch strip
     swatch_y = header_h + pad_y + ((total_lines - 2) * line_h) + 10
@@ -217,13 +221,14 @@ def generate_svg(avatar_lines, stats, login):
         keyframes_css += f'  {p0:.2f}% {{ content: "$ "; }}\n'
         for i in range(1, len(cmd) + 1):
             sub_p = p0 + (i / len(cmd)) * (p1 - p0)
-            sub_str = cmd[:i].replace('"', '\\"')
+            sub_str = html.escape(cmd[:i]).replace('"', '\\"')
             keyframes_css += f'  {sub_p:.2f}% {{ content: "$ {sub_str}"; }}\n'
         
-        keyframes_css += f'  {p2:.2f}% {{ content: "$ {cmd}"; }}\n'
+        escaped_cmd = html.escape(cmd).replace('"', '\\"')
+        keyframes_css += f'  {p2:.2f}% {{ content: "$ {escaped_cmd}"; }}\n'
         for i in range(len(cmd) - 1, -1, -1):
             sub_p = p2 + ((len(cmd) - i) / len(cmd)) * (p3 - p2)
-            sub_str = cmd[:i].replace('"', '\\"')
+            sub_str = html.escape(cmd[:i]).replace('"', '\\"')
             keyframes_css += f'  {sub_p:.2f}% {{ content: "$ {sub_str}"; }}\n'
 
         keyframes_css += f'  {p4:.2f}% {{ content: "$ "; }}\n'
