@@ -1,6 +1,5 @@
 import os
 import math
-import html
 import requests
 import numpy as np
 from PIL import Image
@@ -33,7 +32,7 @@ PROFILE_FIELDS = [
 PROMPT_COMMANDS = [
     "aspiring software developer",
     "bs computer engineering student",
-    "web & mobile development",
+    "web and mobile development",
     "actively seeking ojt / internship",
 ]
 
@@ -64,6 +63,14 @@ ASCII_RAMP = " .:-=+*#%@"
 # ==============================================================================
 # HELPER FUNCTIONS
 # ==============================================================================
+
+def xml_escape_text(text):
+    """Escapes XML characters for inner text nodes."""
+    return str(text).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+def css_escape_string(text):
+    """Escapes quotes and backslashes for CSS string literals."""
+    return str(text).replace("\\", "\\\\").replace('"', '\\"')
 
 def get_avatar_ascii(avatar_path, cols=34):
     """Loads image, converts to square grayscale, downsamples, and returns ASCII lines."""
@@ -142,7 +149,6 @@ def generate_svg(avatar_lines, stats, login):
     gh_login = login.lower()
     
     # CSS typing keyframe generation
-    total_commands = len(PROMPT_COMMANDS)
     total_time = 0.0
     command_timings = []
 
@@ -177,25 +183,25 @@ def generate_svg(avatar_lines, stats, login):
     svg_w = 750
     svg_h = header_h + pad_y * 2 + (total_lines * line_h) + 40
 
-    # Build ASCII XML escape
+    # Build ASCII XML text
     ascii_svg_text = ""
     for idx, line in enumerate(avatar_lines):
-        escaped_line = html.escape(line).replace(" ", "&#160;")
+        escaped_line = xml_escape_text(line).replace(" ", "&#160;")
         y_pos = header_h + pad_y + (idx * line_h) + 12
         ascii_svg_text += f'<tspan x="{pad_x}" y="{y_pos}">{escaped_line}</tspan>\n'
 
-    # Build info text XML escape
+    # Build info text XML
     info_x = pad_x + art_width_px + 30
     info_svg_text = ""
     for idx, row in enumerate(right_rows):
         y_pos = header_h + pad_y + (idx * line_h) + 12
         if isinstance(row, tuple):
             label, val = row
-            escaped_label = html.escape(str(label))
-            escaped_val = html.escape(str(val))
+            escaped_label = xml_escape_text(label)
+            escaped_val = xml_escape_text(val)
             info_svg_text += f'<tspan x="{info_x}" y="{y_pos}"><tspan fill="{LABEL_COLOR}" font-weight="bold">{escaped_label}:</tspan> <tspan fill="{VALUE_COLOR}">{escaped_val}</tspan></tspan>\n'
         else:
-            escaped_row = html.escape(str(row))
+            escaped_row = xml_escape_text(row)
             info_svg_text += f'<tspan x="{info_x}" y="{y_pos}" fill="{HEADER_COLOR}" font-weight="bold">{escaped_row}</tspan>\n'
 
     # Color palette swatch strip
@@ -209,7 +215,7 @@ def generate_svg(avatar_lines, stats, login):
     prompt_y = swatch_y + 25
 
     # CSS Typing keyframe generator
-    keyframes_css = f"@keyframes typeSequence {{\n"
+    keyframes_css = "@keyframes typeSequence {\n"
     curr_time = 0.0
     for cmd, duration, t_type, t_hold, t_delete, t_gap in command_timings:
         p0 = (curr_time / total_time) * 100
@@ -221,14 +227,14 @@ def generate_svg(avatar_lines, stats, login):
         keyframes_css += f'  {p0:.2f}% {{ content: "$ "; }}\n'
         for i in range(1, len(cmd) + 1):
             sub_p = p0 + (i / len(cmd)) * (p1 - p0)
-            sub_str = html.escape(cmd[:i]).replace('"', '\\"')
+            sub_str = css_escape_string(cmd[:i])
             keyframes_css += f'  {sub_p:.2f}% {{ content: "$ {sub_str}"; }}\n'
         
-        escaped_cmd = html.escape(cmd).replace('"', '\\"')
+        escaped_cmd = css_escape_string(cmd)
         keyframes_css += f'  {p2:.2f}% {{ content: "$ {escaped_cmd}"; }}\n'
         for i in range(len(cmd) - 1, -1, -1):
             sub_p = p2 + ((len(cmd) - i) / len(cmd)) * (p3 - p2)
-            sub_str = html.escape(cmd[:i]).replace('"', '\\"')
+            sub_str = css_escape_string(cmd[:i])
             keyframes_css += f'  {sub_p:.2f}% {{ content: "$ {sub_str}"; }}\n'
 
         keyframes_css += f'  {p4:.2f}% {{ content: "$ "; }}\n'
