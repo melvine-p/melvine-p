@@ -1,0 +1,338 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="750" height="425" viewBox="0 0 750 425">
+  <style>
+    .terminal-bg { fill: #0b1120; }
+    .titlebar { fill: #141c30; }
+    .dot-red { fill: #ff5f56; }
+    .dot-yellow { fill: #ffbd2e; }
+    .dot-green { fill: #27c93f; }
+    .title-text { fill: #8b949e; font-family: monospace; font-size: 12px; }
+    .code-text { font-family: 'Courier New', Courier, monospace; font-size: 12px; white-space: pre; }
+    .prompt::after {
+      content: "$ ";
+      animation: typeSequence 20.38s infinite;
+      color: #e8384f;
+      font-weight: bold;
+    }
+    .cursor {
+      animation: blink 0.8s infinite;
+      fill: #e8384f;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    @keyframes typeSequence {
+  0.00% { content: "$ "; }
+  0.39% { content: "$ a"; }
+  0.79% { content: "$ as"; }
+  1.18% { content: "$ asp"; }
+  1.57% { content: "$ aspi"; }
+  1.96% { content: "$ aspir"; }
+  2.36% { content: "$ aspiri"; }
+  2.75% { content: "$ aspirin"; }
+  3.14% { content: "$ aspiring"; }
+  3.53% { content: "$ aspiring "; }
+  3.93% { content: "$ aspiring s"; }
+  4.32% { content: "$ aspiring so"; }
+  4.71% { content: "$ aspiring sof"; }
+  5.10% { content: "$ aspiring soft"; }
+  5.50% { content: "$ aspiring softw"; }
+  5.89% { content: "$ aspiring softwa"; }
+  6.28% { content: "$ aspiring softwar"; }
+  6.67% { content: "$ aspiring software"; }
+  7.07% { content: "$ aspiring software "; }
+  7.46% { content: "$ aspiring software d"; }
+  7.85% { content: "$ aspiring software de"; }
+  8.25% { content: "$ aspiring software dev"; }
+  8.64% { content: "$ aspiring software deve"; }
+  9.03% { content: "$ aspiring software devel"; }
+  9.42% { content: "$ aspiring software develo"; }
+  9.82% { content: "$ aspiring software develop"; }
+  10.21% { content: "$ aspiring software develope"; }
+  10.60% { content: "$ aspiring software developer"; }
+  16.00% { content: "$ aspiring software developer"; }
+  16.22% { content: "$ aspiring software develope"; }
+  16.44% { content: "$ aspiring software develop"; }
+  16.66% { content: "$ aspiring software develo"; }
+  16.88% { content: "$ aspiring software devel"; }
+  17.10% { content: "$ aspiring software deve"; }
+  17.33% { content: "$ aspiring software dev"; }
+  17.55% { content: "$ aspiring software de"; }
+  17.77% { content: "$ aspiring software d"; }
+  17.99% { content: "$ aspiring software "; }
+  18.21% { content: "$ aspiring software"; }
+  18.43% { content: "$ aspiring softwar"; }
+  18.65% { content: "$ aspiring softwa"; }
+  18.87% { content: "$ aspiring softw"; }
+  19.09% { content: "$ aspiring soft"; }
+  19.31% { content: "$ aspiring sof"; }
+  19.53% { content: "$ aspiring so"; }
+  19.75% { content: "$ aspiring s"; }
+  19.98% { content: "$ aspiring "; }
+  20.20% { content: "$ aspiring"; }
+  20.42% { content: "$ aspirin"; }
+  20.64% { content: "$ aspiri"; }
+  20.86% { content: "$ aspir"; }
+  21.08% { content: "$ aspi"; }
+  21.30% { content: "$ asp"; }
+  21.52% { content: "$ as"; }
+  21.74% { content: "$ a"; }
+  21.96% { content: "$ "; }
+  23.93% { content: "$ "; }
+  23.93% { content: "$ "; }
+  24.32% { content: "$ b"; }
+  24.71% { content: "$ bs"; }
+  25.10% { content: "$ bs "; }
+  25.50% { content: "$ bs c"; }
+  25.89% { content: "$ bs co"; }
+  26.28% { content: "$ bs com"; }
+  26.67% { content: "$ bs comp"; }
+  27.07% { content: "$ bs compu"; }
+  27.46% { content: "$ bs comput"; }
+  27.85% { content: "$ bs compute"; }
+  28.25% { content: "$ bs computer"; }
+  28.64% { content: "$ bs computer "; }
+  29.03% { content: "$ bs computer e"; }
+  29.42% { content: "$ bs computer en"; }
+  29.82% { content: "$ bs computer eng"; }
+  30.21% { content: "$ bs computer engi"; }
+  30.60% { content: "$ bs computer engin"; }
+  30.99% { content: "$ bs computer engine"; }
+  31.39% { content: "$ bs computer enginee"; }
+  31.78% { content: "$ bs computer engineer"; }
+  32.17% { content: "$ bs computer engineeri"; }
+  32.56% { content: "$ bs computer engineerin"; }
+  32.96% { content: "$ bs computer engineering"; }
+  33.35% { content: "$ bs computer engineering "; }
+  33.74% { content: "$ bs computer engineering s"; }
+  34.13% { content: "$ bs computer engineering st"; }
+  34.53% { content: "$ bs computer engineering stu"; }
+  34.92% { content: "$ bs computer engineering stud"; }
+  35.31% { content: "$ bs computer engineering stude"; }
+  35.71% { content: "$ bs computer engineering studen"; }
+  36.10% { content: "$ bs computer engineering student"; }
+  41.50% { content: "$ bs computer engineering student"; }
+  41.72% { content: "$ bs computer engineering studen"; }
+  41.94% { content: "$ bs computer engineering stude"; }
+  42.16% { content: "$ bs computer engineering stud"; }
+  42.38% { content: "$ bs computer engineering stu"; }
+  42.60% { content: "$ bs computer engineering st"; }
+  42.82% { content: "$ bs computer engineering s"; }
+  43.04% { content: "$ bs computer engineering "; }
+  43.26% { content: "$ bs computer engineering"; }
+  43.48% { content: "$ bs computer engineerin"; }
+  43.71% { content: "$ bs computer engineeri"; }
+  43.93% { content: "$ bs computer engineer"; }
+  44.15% { content: "$ bs computer enginee"; }
+  44.37% { content: "$ bs computer engine"; }
+  44.59% { content: "$ bs computer engin"; }
+  44.81% { content: "$ bs computer engi"; }
+  45.03% { content: "$ bs computer eng"; }
+  45.25% { content: "$ bs computer en"; }
+  45.47% { content: "$ bs computer e"; }
+  45.69% { content: "$ bs computer "; }
+  45.91% { content: "$ bs computer"; }
+  46.13% { content: "$ bs compute"; }
+  46.36% { content: "$ bs comput"; }
+  46.58% { content: "$ bs compu"; }
+  46.80% { content: "$ bs comp"; }
+  47.02% { content: "$ bs com"; }
+  47.24% { content: "$ bs co"; }
+  47.46% { content: "$ bs c"; }
+  47.68% { content: "$ bs "; }
+  47.90% { content: "$ bs"; }
+  48.12% { content: "$ b"; }
+  48.34% { content: "$ "; }
+  50.31% { content: "$ "; }
+  50.31% { content: "$ "; }
+  50.70% { content: "$ w"; }
+  51.09% { content: "$ we"; }
+  51.48% { content: "$ web"; }
+  51.88% { content: "$ web "; }
+  52.27% { content: "$ web &"; }
+  52.66% { content: "$ web & "; }
+  53.06% { content: "$ web & m"; }
+  53.45% { content: "$ web & mo"; }
+  53.84% { content: "$ web & mob"; }
+  54.23% { content: "$ web & mobi"; }
+  54.63% { content: "$ web & mobil"; }
+  55.02% { content: "$ web & mobile"; }
+  55.41% { content: "$ web & mobile "; }
+  55.80% { content: "$ web & mobile d"; }
+  56.20% { content: "$ web & mobile de"; }
+  56.59% { content: "$ web & mobile dev"; }
+  56.98% { content: "$ web & mobile deve"; }
+  57.37% { content: "$ web & mobile devel"; }
+  57.77% { content: "$ web & mobile develo"; }
+  58.16% { content: "$ web & mobile develop"; }
+  58.55% { content: "$ web & mobile developm"; }
+  58.94% { content: "$ web & mobile developme"; }
+  59.34% { content: "$ web & mobile developmen"; }
+  59.73% { content: "$ web & mobile development"; }
+  65.13% { content: "$ web & mobile development"; }
+  65.35% { content: "$ web & mobile developmen"; }
+  65.57% { content: "$ web & mobile developme"; }
+  65.79% { content: "$ web & mobile developm"; }
+  66.01% { content: "$ web & mobile develop"; }
+  66.23% { content: "$ web & mobile develo"; }
+  66.45% { content: "$ web & mobile devel"; }
+  66.67% { content: "$ web & mobile deve"; }
+  66.90% { content: "$ web & mobile dev"; }
+  67.12% { content: "$ web & mobile de"; }
+  67.34% { content: "$ web & mobile d"; }
+  67.56% { content: "$ web & mobile "; }
+  67.78% { content: "$ web & mobile"; }
+  68.00% { content: "$ web & mobil"; }
+  68.22% { content: "$ web & mobi"; }
+  68.44% { content: "$ web & mob"; }
+  68.66% { content: "$ web & mo"; }
+  68.88% { content: "$ web & m"; }
+  69.10% { content: "$ web & "; }
+  69.33% { content: "$ web &"; }
+  69.55% { content: "$ web "; }
+  69.77% { content: "$ web"; }
+  69.99% { content: "$ we"; }
+  70.21% { content: "$ w"; }
+  70.43% { content: "$ "; }
+  72.39% { content: "$ "; }
+  72.39% { content: "$ "; }
+  72.79% { content: "$ a"; }
+  73.18% { content: "$ ac"; }
+  73.57% { content: "$ act"; }
+  73.96% { content: "$ acti"; }
+  74.36% { content: "$ activ"; }
+  74.75% { content: "$ active"; }
+  75.14% { content: "$ activel"; }
+  75.53% { content: "$ actively"; }
+  75.93% { content: "$ actively "; }
+  76.32% { content: "$ actively s"; }
+  76.71% { content: "$ actively se"; }
+  77.10% { content: "$ actively see"; }
+  77.50% { content: "$ actively seek"; }
+  77.89% { content: "$ actively seeki"; }
+  78.28% { content: "$ actively seekin"; }
+  78.67% { content: "$ actively seeking"; }
+  79.07% { content: "$ actively seeking "; }
+  79.46% { content: "$ actively seeking o"; }
+  79.85% { content: "$ actively seeking oj"; }
+  80.25% { content: "$ actively seeking ojt"; }
+  80.64% { content: "$ actively seeking ojt "; }
+  81.03% { content: "$ actively seeking ojt /"; }
+  81.42% { content: "$ actively seeking ojt / "; }
+  81.82% { content: "$ actively seeking ojt / i"; }
+  82.21% { content: "$ actively seeking ojt / in"; }
+  82.60% { content: "$ actively seeking ojt / int"; }
+  82.99% { content: "$ actively seeking ojt / inte"; }
+  83.39% { content: "$ actively seeking ojt / inter"; }
+  83.78% { content: "$ actively seeking ojt / intern"; }
+  84.17% { content: "$ actively seeking ojt / interns"; }
+  84.56% { content: "$ actively seeking ojt / internsh"; }
+  84.96% { content: "$ actively seeking ojt / internshi"; }
+  85.35% { content: "$ actively seeking ojt / internship"; }
+  90.75% { content: "$ actively seeking ojt / internship"; }
+  90.97% { content: "$ actively seeking ojt / internshi"; }
+  91.19% { content: "$ actively seeking ojt / internsh"; }
+  91.41% { content: "$ actively seeking ojt / interns"; }
+  91.63% { content: "$ actively seeking ojt / intern"; }
+  91.85% { content: "$ actively seeking ojt / inter"; }
+  92.07% { content: "$ actively seeking ojt / inte"; }
+  92.29% { content: "$ actively seeking ojt / int"; }
+  92.52% { content: "$ actively seeking ojt / in"; }
+  92.74% { content: "$ actively seeking ojt / i"; }
+  92.96% { content: "$ actively seeking ojt / "; }
+  93.18% { content: "$ actively seeking ojt /"; }
+  93.40% { content: "$ actively seeking ojt "; }
+  93.62% { content: "$ actively seeking ojt"; }
+  93.84% { content: "$ actively seeking oj"; }
+  94.06% { content: "$ actively seeking o"; }
+  94.28% { content: "$ actively seeking "; }
+  94.50% { content: "$ actively seeking"; }
+  94.72% { content: "$ actively seekin"; }
+  94.94% { content: "$ actively seeki"; }
+  95.17% { content: "$ actively seek"; }
+  95.39% { content: "$ actively see"; }
+  95.61% { content: "$ actively se"; }
+  95.83% { content: "$ actively s"; }
+  96.05% { content: "$ actively "; }
+  96.27% { content: "$ actively"; }
+  96.49% { content: "$ activel"; }
+  96.71% { content: "$ active"; }
+  96.93% { content: "$ activ"; }
+  97.15% { content: "$ acti"; }
+  97.37% { content: "$ act"; }
+  97.60% { content: "$ ac"; }
+  97.82% { content: "$ a"; }
+  98.04% { content: "$ "; }
+  100.00% { content: "$ "; }
+}
+
+  </style>
+
+  <!-- Window Container -->
+  <rect width="750" height="425" rx="8" class="terminal-bg" />
+  
+  <!-- Titlebar -->
+  <path d="M 0 8 C 0 3, 3 0, 8 0 L 742 0 C 747 0, 750 3, 750 8 L 750 30 L 0 30 Z" class="titlebar" />
+  <circle cx="18" cy="15" r="5" class="dot-red" />
+  <circle cx="34" cy="15" r="5" class="dot-yellow" />
+  <circle cx="50" cy="15" r="5" class="dot-green" />
+  <text x="375.0" y="19" text-anchor="middle" class="title-text">melvine-p@terminal:~</text>
+
+  <!-- ASCII Art Column -->
+  <text class="code-text" fill="#5dc9f2">
+<tspan x="20" y="62">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;,&#160;&#160;&#160;&#160;&#160;.-'"'-.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="77">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/|&#160;&#160;&#160;.'&#160;&#160;,-.&#160;&#160;\&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="92">&#160;&#160;&#160;&#160;&#160;&#160;&#160;/&#160;|&#160;&#160;/&#160;&#160;&#160;/&#160;&#160;&#160;|&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="107">&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;|&#160;|&#160;&#160;&#160;|&#160;&#160;&#160;&#160;|&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="122">&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;|&#160;|&#160;&#160;&#160;|&#160;&#160;&#160;&#160;|&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="137">&#160;&#160;&#160;&#160;&#160;/&#160;&#160;&#160;|&#160;|&#160;&#160;&#160;|&#160;&#160;&#160;&#160;|&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="152">&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;|&#160;|&#160;&#160;&#160;&#160;'--'&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="167">&#160;&#160;&#160;&#160;|&#160;&#160;&#160;&#160;'-'&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="182">&#160;&#160;&#160;&#160;&#160;\&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="197">&#160;&#160;&#160;&#160;&#160;&#160;'.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;.'&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="212">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'--.____.-'&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="227">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/&#160;&#160;&#160;&#160;&#160;&#160;\&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="242">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;o&#160;&#160;o&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="257">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;|&#160;&#160;&#160;\/&#160;&#160;&#160;|&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="272">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\&#160;&#160;--&#160;&#160;/&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="287">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;'.__.'&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="302">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/&#160;&#160;|&#160;&#160;&#160;\&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+<tspan x="20" y="317">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;/&#160;&#160;&#160;|&#160;&#160;&#160;&#160;\&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</tspan>
+  </text>
+
+  <!-- Info Columns -->
+  <text class="code-text">
+<tspan x="315.2" y="62" fill="#e8384f" font-weight="bold">melvine-p@github</tspan>
+<tspan x="315.2" y="77" fill="#e8384f" font-weight="bold">----------------</tspan>
+<tspan x="315.2" y="92"><tspan fill="#ffffff" font-weight="bold">Name:</tspan> <tspan fill="#5dc9f2">Neil Melvine M. Togado</tspan></tspan>
+<tspan x="315.2" y="107"><tspan fill="#ffffff" font-weight="bold">Role:</tspan> <tspan fill="#5dc9f2">Aspiring Software Developer</tspan></tspan>
+<tspan x="315.2" y="122"><tspan fill="#ffffff" font-weight="bold">Location:</tspan> <tspan fill="#5dc9f2">Boac, Marinduque, PH</tspan></tspan>
+<tspan x="315.2" y="137"><tspan fill="#ffffff" font-weight="bold">Education:</tspan> <tspan fill="#5dc9f2">BS Computer Engineering (4th Yr)</tspan></tspan>
+<tspan x="315.2" y="152"><tspan fill="#ffffff" font-weight="bold">Stack.Frontend:</tspan> <tspan fill="#5dc9f2">HTML, CSS, JS, TS, React, Next.js</tspan></tspan>
+<tspan x="315.2" y="167"><tspan fill="#ffffff" font-weight="bold">Stack.Backend:</tspan> <tspan fill="#5dc9f2">Node.js, MySQL, PostgreSQL</tspan></tspan>
+<tspan x="315.2" y="182"><tspan fill="#ffffff" font-weight="bold">Stack.Mobile:</tspan> <tspan fill="#5dc9f2">React Native</tspan></tspan>
+<tspan x="315.2" y="197"><tspan fill="#ffffff" font-weight="bold">Security:</tspan> <tspan fill="#5dc9f2">JWT, bcrypt, OAuth, Auth0</tspan></tspan>
+<tspan x="315.2" y="212"><tspan fill="#ffffff" font-weight="bold">Tools:</tspan> <tspan fill="#5dc9f2">GitHub, VSCode, Arduino IDE</tspan></tspan>
+<tspan x="315.2" y="227"><tspan fill="#ffffff" font-weight="bold">Contact.Email:</tspan> <tspan fill="#5dc9f2">melvinetogado1@gmail.com</tspan></tspan>
+<tspan x="315.2" y="242"><tspan fill="#ffffff" font-weight="bold">Contact.Phone:</tspan> <tspan fill="#5dc9f2">09155871671</tspan></tspan>
+<tspan x="315.2" y="257"><tspan fill="#ffffff" font-weight="bold">Contact.GitHub:</tspan> <tspan fill="#5dc9f2">github.com/melvine-p</tspan></tspan>
+<tspan x="315.2" y="272"><tspan fill="#ffffff" font-weight="bold">Contact.LinkedIn:</tspan> <tspan fill="#5dc9f2">linkedin.com/in/neil-melvine-togado-51a111438</tspan></tspan>
+<tspan x="315.2" y="287"><tspan fill="#ffffff" font-weight="bold">GitHub.Repos:</tspan> <tspan fill="#5dc9f2">2</tspan></tspan>
+<tspan x="315.2" y="302"><tspan fill="#ffffff" font-weight="bold">GitHub.Followers:</tspan> <tspan fill="#5dc9f2">0</tspan></tspan>
+  </text>
+
+  <!-- Color Swatches -->
+<rect x="315.2" y="345" width="18" height="10" fill="#0b1120" rx="2" />
+<rect x="337.2" y="345" width="18" height="10" fill="#e8384f" rx="2" />
+<rect x="359.2" y="345" width="18" height="10" fill="#3ddc84" rx="2" />
+<rect x="381.2" y="345" width="18" height="10" fill="#ffd166" rx="2" />
+<rect x="403.2" y="345" width="18" height="10" fill="#4d8cff" rx="2" />
+<rect x="425.2" y="345" width="18" height="10" fill="#b16cff" rx="2" />
+<rect x="447.2" y="345" width="18" height="10" fill="#39e0d0" rx="2" />
+<rect x="469.2" y="345" width="18" height="10" fill="#e8e8e8" rx="2" />
+
+
+  <!-- Animated Prompt -->
+  <text x="315.2" y="370" class="code-text prompt" />
+  <rect x="595.2" y="360" width="7" height="12" class="cursor" />
+</svg>
